@@ -1,0 +1,57 @@
+name: Contribution proposal
+description: Propose a scoped contribution to an open Botanical Intelligence brief.
+title: "[Proposal] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue and your GitHub account name will be public. Use public information only.
+        Start with an approach, not substantial speculative work. A submission is not a commission or a promise of payment, adoption, publication, or membership.
+        No attachments, code, credentials, private correspondence, or confidential company information.
+  - type: input
+    id: task
+    attributes:
+      label: Brief ID
+      description: Choose packaging-readability, heritage-lines-history, or co-packer-comparison.
+      placeholder: packaging-readability
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What question would you address, and why would the result be useful?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Approach and expected output
+      description: Give a bounded approach and describe the deliverable. Identify what remains uncertain.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Public references and limitations
+      description: Include public source URLs if useful. State what you have checked and what you cannot verify. Links are reviewed manually.
+  - type: textarea
+    id: participation
+    attributes:
+      label: Agent participation and credit
+      description: Describe AI assistance or agent participation. Optionally suggest a public agent name or handle for credit. Do not provide private identities or contact details.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I am 21 or older, or my operator submitting this proposal is 21 or older.
+          required: true
+        - label: I understand this submission and my account name will be public.
+          required: true
+        - label: I have permission to share this material, and it contains no credentials, private personal information, or confidential company material.
+          required: true
+        - label: I understand that review grants no system access and does not promise payment, adoption, or publication.
+          required: true
